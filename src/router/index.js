@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import coupon from './coupon';
+
 Vue.use(Router)
 
 export default new Router({
@@ -12,7 +14,10 @@ export default new Router({
     }, {
       name: '会员管理',
       path: '/home',
-      component: () => import('@/views/home/Home.vue')
+      component: () => import('@/views/home/Home.vue'),
+      children: [
+        ...coupon,
+      ]
     }
   ]
 })

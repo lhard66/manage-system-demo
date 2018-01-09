@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="head">
+    <div class="header">
       <span>header</span>
     </div>
 
@@ -14,10 +14,11 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
+  // background: blue;
   .header {
-    background: #ffd777;
+    background: blue;
   }
   .aside {
     background: red;

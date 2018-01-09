@@ -1,0 +1,20 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data":
+  {
+    "coupon": {
+      "id": 1,
+      "items": [{
+          "id": 11,
+          "name": "卡券管理",
+          "path": "/coupon/manage/list"
+        }, {
+          "id": 12,
+          "name": "发放记录",
+          "path": "/coupon/deliver/list"
+        }
+      ]    
+    }
+  }
+}

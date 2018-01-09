@@ -24,9 +24,24 @@
 </template>
 
 <script>
+import { getMenu } from '@/api';
+
 export default {
   name: 'side',
+  data() {
+    return {
+      msg: 'abc',
+    }
+  },
+  mounted() {
+    this.init();
+  },
   methods: {
+    init() {
+      getMenu().then(data => {
+        console.log(data);
+      });
+    },
     setActive(index, path) {
       console.log(index, path);
       this.$router.push({

@@ -1,5 +1,3 @@
-import render from './url-render.js';
-
 const DEBUG = false;
 
 export const API = {
@@ -12,6 +10,6 @@ export const API = {
     this.urls = Object.assign(this.urls, obj);
   },
   urls: {
-    'enum': '/car/static/json/ok.json',
+    'menu': '/static/enum.json',
   }
 }

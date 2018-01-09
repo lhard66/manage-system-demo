@@ -8,7 +8,6 @@ import Qs from 'qs';
  * @return {Promise}
  */
 const doRequest = (url, options) => {
-
   const config = Object.assign({
     url,
     timeout: 30 * 1000,

@@ -1,6 +1,7 @@
 # cloudy-member
 
 > cloudy member manage system
+> Vue2.5 + element2.0 + Vue Route
 
 ## Build Setup
 

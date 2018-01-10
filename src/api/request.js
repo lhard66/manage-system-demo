@@ -8,6 +8,7 @@ import Qs from 'qs';
  * @return {Promise}
  */
 const doRequest = (url, options) => {
+
   const config = Object.assign({
     url,
     timeout: 30 * 1000,
@@ -15,8 +16,8 @@ const doRequest = (url, options) => {
   }, options);
 
   return new Promise((resolve, reject) => {
+
     axios(config).then(res => {
-      // debugger;
       const status = res.status;
       if (status === 200) {
         const result = res.data;
@@ -51,6 +52,7 @@ const doRequest = (url, options) => {
       }
       reject(msg, status);
     });
+
   });
 }
 

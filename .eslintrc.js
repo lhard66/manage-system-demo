@@ -43,6 +43,8 @@ module.exports = {
     'no-useless-computed-key': 0,
     'prefer-promise-reject-errors': 0,
     'no-multi-spaces': 0,
+    'padded-blocks': 0,
+    'eol-last': 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }

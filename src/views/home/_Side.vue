@@ -30,7 +30,7 @@ export default {
   name: 'side',
   data() {
     return {
-      msg: 'abc',
+      menuData: null,
     }
   },
   mounted() {
@@ -39,8 +39,10 @@ export default {
   methods: {
     init() {
       getMenu().then(data => {
-        console.log(data);
-      });
+        this.menuData = data;
+      }).catch(err => {
+        this.$message.error(err.)
+      })
     },
     setActive(index, path) {
       console.log(index, path);

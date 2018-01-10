@@ -10,6 +10,6 @@ export const API = {
     this.urls = Object.assign(this.urls, obj);
   },
   urls: {
-    'menu': '/static/enum.json',
+    'menu': '/static/menu.json',
   }
 }

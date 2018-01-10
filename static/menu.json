@@ -1,20 +1,25 @@
 {
   "code": 200,
   "msg": "成功",
-  "data":
-  {
-    "coupon": {
-      "id": 1,
-      "items": [{
-          "id": 11,
-          "name": "卡券管理",
-          "path": "/coupon/manage/list"
-        }, {
-          "id": 12,
-          "name": "发放记录",
-          "path": "/coupon/deliver/list"
-        }
-      ]    
-    }
-  }
+  "data": [{
+    "id": 1,
+    "name": "卡券中心",
+    "items": [{
+      "id": 11,
+      "name": "卡券管理",
+      "path": "/coupon/manage/list"
+    }, {
+      "id": 12,
+      "name": "发放记录",
+      "path": "/coupon/deliver/list"
+    }]
+  }, {
+    "id": 2,
+    "name": "会员中心",
+    "items": [{
+      "id": 21,
+      "name": "套餐管理",
+      "path": "/home"
+    }]
+  }]
 }
